@@ -1,0 +1,284 @@
+/* ===========================
+   Reset y Globales
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===========================
+   Encabezado y Nav
+=========================== */
+header {
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  color: #e63946;
+}
+
+/* ===========================
+   Banner
+=========================== */
+.banner {
+  background: url("assets/banner.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.banner h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.banner p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* ===========================
+   Main
+=========================== */
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main h2, main h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* ===========================
+   Productos
+=========================== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.producto h3 {
+  margin: 15px 0 8px;
+  font-size: 1.3rem;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #e63946;
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: #e63946;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #c92c3d;
+}
+
+/* ===========================
+   Tablas
+=========================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+table thead {
+  background: #e63946;
+  color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+/* ===========================
+   Formularios
+=========================== */
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#mensajeRegistro {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* ===========================
+   Carrito y Boleta
+=========================== */
+.resumen-pedido {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.resumen-pedido h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+#boleta {
+  background: #fff;
+  border: 2px solid #e63946;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+#boleta h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.oculto {
+  display: none;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===========================
+   Secciones Admin y Cocina
+=========================== */
+section {
+  margin-bottom: 40px;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select {
+  font-size: 1rem;
+}
+
+section button {
+  margin-top: 10px;
+}
+
+/* ===========================
+   Botones Pequeños
+=========================== */
+button small {
+  font-size: 0.8rem;
+  padding: 5px 8px;
+}

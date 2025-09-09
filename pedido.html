@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito de Compras</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="logo"><img src="assets/logo.png" alt="Logo"><h1>Fukusuke Sushi</h1></div>
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="pedido.html" class="activo">Pedido</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+</nav>
+</header>
+
+<main>
+<h2>Tu Carrito</h2>
+<table id="tablaCarrito">
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Cantidad</th>
+      <th>Subtotal</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<div class="resumen-pedido">
+  <h3>Total: $<span id="total">0</span></h3>
+  <button onclick="confirmarPedido()">Confirmar Pedido</button>
+  <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+</div>
+
+<section id="boleta" class="oculto">
+  <h2>Boleta Electrónica</h2>
+  <p>N° Pedido: <span id="numPedido"></span></p>
+  <ul id="detalleBoleta"></ul>
+  <h3>Total: $<span id="totalBoleta"></span></h3>
+  <button onclick="descargarBoletaPDF()">Descargar PDF</button>
+  <p>Gracias por tu compra. Tu pedido será entregado pronto.</p>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2025 Fukusuke Sushi - Delivery Online</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+<script>
+mostrarCarrito();
+</script>
+</body>
+</html>

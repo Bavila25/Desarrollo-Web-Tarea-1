@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fukusuke Sushi - Inicio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo"><img src="assets/logo.png" alt="Logo"><h1>Fukusuke Sushi</h1></div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="activo">Inicio</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="pedido.html">Pedido</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="cocina.html">Cocina</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="banner">
+  <h2>Bienvenido a Fukusuke Sushi Delivery</h2>
+  <p>¡El mejor sushi directo a tu casa!</p>
+</section>
+
+<main>
+  <h2>Nuestro Menú</h2>
+  <div id="menuProductos" class="menu-grid"></div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Fukusuke Sushi - Delivery Online</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Mostrar productos en la página principal
+  mostrarProductosMenu();
+</script>
+</body>
+</html>
